@@ -652,6 +652,10 @@ video {
   width: 5rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -822,6 +826,10 @@ video {
   line-height: 2.25rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -852,6 +860,10 @@ video {
 @media (min-width: 640px) {
   .sm\:w-28 {
     width: 7rem;
+  }
+
+  .sm\:w-32 {
+    width: 8rem;
   }
 
   .sm\:gap-5 {
