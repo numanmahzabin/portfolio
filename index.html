@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Tailwind Project</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- bg image  -->
+    <div class="fixed right-0 top-0 -z-10 w-11/12 translate-y-[-80%]">
+      <img src="img/header-bg-color.png" alt="bg" class="w-full" />
+    </div>
+    <!-- navbar -->
+    <nav
+      class="fixed flex w-full items-center justify-between px-5 py-4 xl:px-[8%]"
+    >
+      <!-- logo -->
+      <img src="img/logo.png" alt="logo" class="w-28" />
+      <!-- menu item -->
+      <div
+        class="hidden gap-5 rounded-full bg-opacity-50 px-7 py-4 shadow-sm md:flex lg:gap-10 lg:px-8"
+      >
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#services">Services</a>
+        <a href="#work">My Work</a>
+        <a href="#contact">Contact me</a>
+      </div>
+      <!-- theme, contact and mobile menu bar-->
+      <div class="flex items-center gap-3 sm:gap-6">
+        <!-- theme button -->
+        <img
+          src="img/moon_icon.png"
+          alt="dark mode"
+          class="size-6 cursor-pointer"
+        />
+        <img
+          src="img/sun_icon.png"
+          alt="dark mode"
+          class="hidden size-6 cursor-pointer"
+        />
+        <!-- contact button -->
+        <button
+          class="hidden items-center justify-center gap-4 rounded-full border border-gray-500 px-10 py-3 lg:flex"
+        >
+          <a href="#contact">Contact</a>
+          <img src="img/arrow-icon.png" alt="arrow-icon" class="size-3" />
+        </button>
+        <!-- menu bar icon -->
+        <div
+          id="open-menu"
+          class="cursor-pointer md:hidden"
+          onclick="openMenu()"
+        >
+          <img src="img/menu-black.png" alt="menu bar" class="size-6" />
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div
+        id="sidemenu"
+        class="fixed -right-64 bottom-0 top-0 z-50 flex h-screen w-64 flex-col gap-y-6 bg-red-50 px-10 py-20 transition duration-500 md:hidden "
+      >
+        <div
+          class="cursor-pointer absolute top-6 right-6"
+          id="close-menu"
+          onclick="closeMenu()"
+        >
+          <img src="img/close-black.png" alt="close menu" class="size-6" />
+        </div>
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#services">Services</a>
+        <a href="#work">My Work</a>
+        <a href="#contact">Contact me</a>
+      </div>
+    </nav>
+    <div class="h-screen"></div>
+
+    <!-- script file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
