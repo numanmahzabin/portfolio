@@ -59,15 +59,17 @@
       <!-- mobile menu -->
       <div
         id="sidemenu"
-        class="fixed -right-64 bottom-0 top-0 z-50 flex h-screen w-64 flex-col gap-y-6 bg-red-50 px-10 py-20 transition duration-500 md:hidden "
+        class="fixed -right-64 bottom-0 top-0 z-50 flex h-screen w-64 flex-col gap-y-6 bg-red-50 px-10 py-20 transition duration-500 md:hidden"
       >
+        <!-- menu closing icon -->
         <div
-          class="cursor-pointer absolute top-6 right-6"
+          class="absolute right-6 top-6 cursor-pointer"
           id="close-menu"
           onclick="closeMenu()"
         >
           <img src="img/close-black.png" alt="close menu" class="size-6" />
         </div>
+        <!-- mobile menu bar list -->
         <a href="#home">Home</a>
         <a href="#about">About me</a>
         <a href="#services">Services</a>
@@ -75,7 +77,42 @@
         <a href="#contact">Contact me</a>
       </div>
     </nav>
-    <div class="h-screen"></div>
+
+    <!-- home section -->
+
+    <section
+      id="home"
+      class="flex h-screen flex-col items-center justify-center gap-3 sm:gap-5 px-6 py-10 text-center"
+    >
+      <img src="img/profile-img.png" alt="" class="w-32 rounded-full" />
+      <h3 class="text-lg sm:text-xl md:text-2xl">Hi! I'm Eliana Jade</h3>
+      <h1 class="max-w-3xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+        frontend web developer based in London.
+      </h1>
+      <p class="max-w-xl text-base/8">
+        I am a frontend developer from California, USA with 10 years of
+        experience in multiple companies like Microsoft, Tesla and Apple.
+      </p>
+      <!-- buttons -->
+      <div class="flex flex-col gap-4 font-outfit md:flex-row">
+        <button
+          class="flex items-center justify-center gap-2 rounded-full text-white bg-red-400 px-10 py-3"
+        >
+          <a href="#contact">Contact me</a>
+          <img
+            src="img/right-arrow-white.png"
+            alt="right-arrow"
+            class="w-4 mt-1" 
+          />
+        </button>
+        <button
+          class="flex items-center justify-center gap-2 rounded-full border border-gray-500 px-10 py-3"
+        >
+          <a href="#contact">My resume</a>
+          <img src="img/download-icon.png" alt="download-icon" class="size-3" />
+        </button>
+      </div>
+    </section>
 
     <!-- script file -->
     <script src="js/script.js"></script>
