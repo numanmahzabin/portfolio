@@ -6,7 +6,7 @@
     <title>Portfolio | Tailwind Project</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body class="overflow-x-hidden w-screen">
+  <body class="w-screen overflow-x-hidden">
     <!-- bg image  -->
     <div class="fixed right-0 top-0 -z-10 w-11/12 translate-y-[-80%]">
       <img src="img/header-bg-color.png" alt="bg" class="w-full" />
@@ -372,7 +372,47 @@
     </section>
 
     <!-- contact -->
+    <section id="contact" class="w-full scroll-mt-10 px-[12%] py-10">
+      <h3 class="text-center text-lg">Connect with me</h3>
+      <h2 class="my-5 text-center text-5xl">Get in touch</h2>
+      <p class="mx-auto mb-10 max-w-xl text-center text-base/8">
+        I'd love to hear from you! If you have any questions, comments or
+        feedback, please use the form below.
+      </p>
+      <form
+        action=""
+        class="mx-auto my-10 max-w-2xl flex flex-col gap-6"
+      >
+      <div class="flex flex-col md:flex-row w-full gap-6 justify-between">
 
+        <input
+          type="text"
+          placeholder="Enter your name"
+          class="rounded-lg border border-gray-400 bg-slate-100 px-3 py-4 focus:outline-none w-full"
+        />
+        <input
+          type="text"
+          placeholder="Enter your name"
+          class="rounded-lg border border-gray-400 bg-slate-100 px-3 py-4 focus:outline-none w-full"
+        />
+      </div>
+
+        
+        <textarea
+          name=""
+          id=""
+          class="resize-none rounded-lg border border-gray-400 bg-slate-100 px-3 py-4 focus:outline-none md:col-span-2"
+          placeholder="Enter your message..."
+          rows="8"
+        ></textarea>
+        <button
+          class="col-span-2 mx-auto my-10 mt-10 flex items-center gap-3 self-center rounded-full border bg-black/80 px-6 py-2.5 text-white duration-500 hover:bg-black/100 sm:px-12 sm:py-4"
+        >
+          <a href="#" class=""> Show more </a
+          ><img src="img/right-arrow-bold-dark.png" alt="" class="mt-1 w-4" />
+        </button>
+      </form>
+    </section>
     <!-- script file -->
     <script src="js/script.js"></script>
   </body>
