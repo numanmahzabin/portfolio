@@ -59,7 +59,7 @@
       <!-- mobile menu -->
       <div
         id="sidemenu"
-        class="fixed -right-64 bottom-0 top-0 z-50 flex h-screen w-64 flex-col gap-y-6 bg-red-50 px-10 py-20 pt-40 transition duration-500 md:hidden"
+        class="z-1000 fixed -right-64 bottom-0 top-0 flex h-screen w-64 flex-col gap-y-6 bg-red-50 px-10 py-20 pt-40 transition duration-500 md:hidden"
       >
         <!-- menu closing icon -->
         <div
@@ -115,7 +115,7 @@
     </section>
 
     <!-- about section -->
-    <section id="about" class="w-full px-5 py-10 md:px-[12%] scroll-mt-20">
+    <section id="about" class="w-full scroll-mt-20 px-[12%] py-10">
       <p class="text-center text-lg">Introduction</p>
       <h3 class="mt-2 text-center text-5xl">About me</h3>
       <!-- main about -->
@@ -128,10 +128,20 @@
             class="w-64 max-w-none rounded-lg sm:w-80"
           />
           <!-- rotating box -->
-           <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_slate-200] flex items-center justify-center">
-            <img src="img/circular-text.png" alt="" class="w-full animate-spin-slow">
-            <img src="img/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-           </div>
+          <div
+            class="absolute bottom-0 right-0 flex aspect-square w-1/2 translate-x-1/4 translate-y-1/3 items-center justify-center rounded-full bg-white shadow-[0_4px_55px_slate-200]"
+          >
+            <img
+              src="img/circular-text.png"
+              alt=""
+              class="animate-spin-slow w-full"
+            />
+            <img
+              src="img/dev-icon.png"
+              alt=""
+              class="absolute left-1/2 top-1/2 w-1/4 -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
         </div>
         <!-- right side -->
         <div>
@@ -142,11 +152,11 @@
             contributing to their success and growth.
           </p>
           <!-- cards -->
-          <ul class="flex flex-col sm:flex-row gap-6 max-w-2xl"> 
-          <!-- <ul class=" grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">  -->
+          <ul class="flex max-w-2xl flex-col gap-6 sm:flex-row">
+            <!-- <ul class=" grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">  -->
             <!-- card 01 -->
             <li
-              class="cursor-pointer rounded-2xl border-[0.5px] border-gray-400 p-6 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black] flex-1"
+              class="flex-1 cursor-pointer rounded-2xl border-[0.5px] border-gray-400 p-6 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black]"
             >
               <img src="img/code-icon.png" alt="" class="mt-3 w-7" />
               <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
@@ -156,7 +166,7 @@
             </li>
             <!-- card 02 -->
             <li
-              class="cursor-pointer rounded-2xl border-[0.5px] border-gray-400 p-6 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black] flex-1"
+              class="flex-1 cursor-pointer rounded-2xl border-[0.5px] border-gray-400 p-6 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black]"
             >
               <img src="img/edu-icon.png" alt="" class="mt-3 w-7" />
               <h3 class="my-4 font-semibold text-gray-700">Education</h3>
@@ -164,7 +174,7 @@
             </li>
             <!-- card 03 -->
             <li
-              class="cursor-pointer rounded-2xl border-[0.5px] border-gray-400 p-6 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black] flex-1"
+              class="flex-1 cursor-pointer rounded-2xl border-[0.5px] border-gray-400 p-6 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black]"
             >
               <img src="img/project-icon.png" alt="" class="mt-3 w-7" />
               <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
@@ -172,28 +182,106 @@
             </li>
           </ul>
           <!-- tools -->
-           <h3 class="text-gray-700 py-5">Tools I use</h3>
-           <ul class="flex gap-4 items-center">
-            <li class="border-[0.5px] border-gray-400 p-3 rounded-lg cursor-pointer hover:-translate-y-2 duration-500 hover:shadow-[1px_1px_black]">
-              <img src="img/vscode.png" alt="" class="w-8">
+          <h3 class="py-5 text-gray-700">Tools I use</h3>
+          <ul class="flex items-center gap-4">
+            <li
+              class="cursor-pointer rounded-lg border-[0.5px] border-gray-400 p-3 duration-500 hover:-translate-y-2 hover:shadow-[1px_1px_black]"
+            >
+              <img src="img/vscode.png" alt="" class="w-8" />
             </li>
-            <li class="border-[0.5px] border-gray-400 p-3 rounded-lg cursor-pointer hover:-translate-y-2 duration-500 hover:shadow-[1px_1px_black]">
-              <img src="img/firebase.png" alt="" class="w-8">
+            <li
+              class="cursor-pointer rounded-lg border-[0.5px] border-gray-400 p-3 duration-500 hover:-translate-y-2 hover:shadow-[1px_1px_black]"
+            >
+              <img src="img/firebase.png" alt="" class="w-8" />
             </li>
-            <li class="border-[0.5px] border-gray-400 p-3 rounded-lg cursor-pointer hover:-translate-y-2 duration-500 hover:shadow-[1px_1px_black]">
-              <img src="img/mongodb.png" alt="" class="w-8">
+            <li
+              class="cursor-pointer rounded-lg border-[0.5px] border-gray-400 p-3 duration-500 hover:-translate-y-2 hover:shadow-[1px_1px_black]"
+            >
+              <img src="img/mongodb.png" alt="" class="w-8" />
             </li>
-            <li class="border-[0.5px] border-gray-400 p-3 rounded-lg cursor-pointer hover:-translate-y-2 duration-500 hover:shadow-[1px_1px_black]">
-              <img src="img/figma.png" alt="" class="w-8">
+            <li
+              class="cursor-pointer rounded-lg border-[0.5px] border-gray-400 p-3 duration-500 hover:-translate-y-2 hover:shadow-[1px_1px_black]"
+            >
+              <img src="img/figma.png" alt="" class="w-8" />
             </li>
-            <li class="border-[0.5px] border-gray-400 p-3 rounded-lg cursor-pointer hover:-translate-y-2 duration-500 hover:shadow-[1px_1px_black]">
-              <img src="img/git.png" alt="" class="w-8">
+            <li
+              class="cursor-pointer rounded-lg border-[0.5px] border-gray-400 p-3 duration-500 hover:-translate-y-2 hover:shadow-[1px_1px_black]"
+            >
+              <img src="img/git.png" alt="" class="w-8" />
             </li>
-           </ul>
+          </ul>
         </div>
       </div>
     </section>
 
+    <!-- service section -->
+
+    <section id="service" class="w-full scroll-mt-20 px-[12%] py-10">
+      <h3 class="text-center text-lg">What i offer</h3>
+      <h2 class="my-5 text-center text-5xl">My services</h2>
+      <p class="mx-auto my-3 max-w-xl text-center text-base/8 mb-5">
+        I am a frontend developer from California, USA with 10 years of
+        experience in multiple companies like Microsoft, Tesla and Apple.
+      </p>
+      <!-- cards -->
+      <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <li
+          class="flex cursor-pointer flex-col gap-5 rounded-lg border-[0.5px] border-gray-400 px-8 py-12 text-gray-700 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black]"
+        >
+          <img src="img/web-icon.png" alt="" class="w-10" />
+          <h4 class="text-xl">Web Design</h4>
+          <p class="text-sm">
+            Web development is the process of building, programming...
+          </p>
+          <h6 class="text-black">
+            Read More
+            <img src="img/right-arrow.png" alt="" class="ml-1 inline w-4" />
+          </h6>
+        </li>
+        <li
+          class="flex cursor-pointer flex-col gap-5 rounded-lg border-[0.5px] border-gray-400 px-8 py-12 text-gray-700 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black]"
+        >
+          <img src="img/web-icon.png" alt="" class="w-10" />
+          <h4 class="text-xl">Web Design</h4>
+          <p class="text-sm">
+            Web development is the process of building, programming...
+          </p>
+          <h6 class="text-black">
+            Read More
+            <img src="img/right-arrow.png" alt="" class="ml-1 inline w-4" />
+          </h6>
+        </li>
+        <li
+          class="flex cursor-pointer flex-col gap-5 rounded-lg border-[0.5px] border-gray-400 px-8 py-12 text-gray-700 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black]"
+        >
+          <img src="img/web-icon.png" alt="" class="w-10" />
+          <h4 class="text-xl">Web Design</h4>
+          <p class="text-sm">
+            Web development is the process of building, programming...
+          </p>
+          <h6 class="text-black">
+            Read More
+            <img src="img/right-arrow.png" alt="" class="ml-1 inline w-4" />
+          </h6>
+        </li>
+        <li
+          class="flex cursor-pointer flex-col gap-5 rounded-lg border-[0.5px] border-gray-400 px-8 py-12 text-gray-700 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black]"
+        >
+          <img src="img/web-icon.png" alt="" class="w-10" />
+          <h4 class="text-xl">Web Design</h4>
+          <p class="text-sm">
+            Web development is the process of building, programming...
+          </p>
+          <h6 class="text-black">
+            Read More
+            <img src="img/right-arrow.png" alt="" class="ml-1 inline w-4" />
+          </h6>
+        </li>
+      </ul>
+    </section>
+
+
+    <!--  -->
     <!-- script file -->
     <script src="js/script.js"></script>
   </body>
