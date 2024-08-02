@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily : {
-        "ovo" : ["Ovo"],
-        "outfit" : ["Outfit"]
+        // "ovo" : ["Ovo"],
+        // "outfit" : ["Outfit"]
       },
       colors:{
         "blue" : "#110020"
