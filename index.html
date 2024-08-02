@@ -6,7 +6,7 @@
     <title>Portfolio | Tailwind Project</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden w-screen">
     <!-- bg image  -->
     <div class="fixed right-0 top-0 -z-10 w-11/12 translate-y-[-80%]">
       <img src="img/header-bg-color.png" alt="bg" class="w-full" />
@@ -290,7 +290,9 @@
       </p>
       <!-- work showcase -->
 
-      <ul class="mt-12 mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <ul
+        class="mb-20 mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
+      >
         <li
           class="group relative aspect-square cursor-pointer rounded-lg bg-[url('../img/work-1.png')] bg-cover bg-center bg-no-repeat"
         >
@@ -309,7 +311,7 @@
           </div>
         </li>
         <li
-          class="group relative aspect-square cursor-pointer rounded-lg bg-[url('../img/work-1.png')] bg-cover bg-center bg-no-repeat"
+          class="group relative aspect-square cursor-pointer rounded-lg bg-[url('../img/work-2.png')] bg-cover bg-center bg-no-repeat"
         >
           <div
             class="absolute bottom-5 left-1/2 flex w-10/12 -translate-x-1/2 items-center justify-between rounded-md bg-white px-5 py-3 duration-500 group-hover:bottom-7"
@@ -326,7 +328,7 @@
           </div>
         </li>
         <li
-          class="group relative aspect-square cursor-pointer rounded-lg bg-[url('../img/work-1.png')] bg-cover bg-center bg-no-repeat"
+          class="group relative aspect-square cursor-pointer rounded-lg bg-[url('../img/work-3.png')] bg-cover bg-center bg-no-repeat"
         >
           <div
             class="absolute bottom-5 left-1/2 flex w-10/12 -translate-x-1/2 items-center justify-between rounded-md bg-white px-5 py-3 duration-500 group-hover:bottom-7"
@@ -343,7 +345,7 @@
           </div>
         </li>
         <li
-          class="group relative aspect-square cursor-pointer rounded-lg bg-[url('../img/work-1.png')] bg-cover bg-center bg-no-repeat"
+          class="group relative aspect-square cursor-pointer rounded-lg bg-[url('../img/work-4.png')] bg-cover bg-center bg-no-repeat"
         >
           <div
             class="absolute bottom-5 left-1/2 flex w-10/12 -translate-x-1/2 items-center justify-between rounded-md bg-white px-5 py-3 duration-500 group-hover:bottom-7"
@@ -362,12 +364,15 @@
       </ul>
 
       <button
-        class="mx-auto flex items-center gap-3 rounded-full border border-gray-500 px-12 py-4 my-10 hover:bg-slate-50 duration-500"
+        class="mx-auto my-10 flex items-center gap-3 rounded-full border border-gray-500 px-6 py-2.5 duration-500 hover:bg-slate-50 sm:px-12 sm:py-4"
       >
         <a href="#" class=""> Show more </a
         ><img src="img/right-arrow-bold.png" alt="" class="w-4" />
       </button>
     </section>
+
+    <!-- contact -->
+
     <!-- script file -->
     <script src="js/script.js"></script>
   </body>
