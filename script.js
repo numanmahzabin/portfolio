@@ -1,26 +1,64 @@
 const menu = document.querySelector("#sidemenu");
 const body = document.querySelector("body");
-const navbar = document.querySelector('#navbar');
-const menubar = document.querySelector('#menubar');
-
-function openMenu(){
-    menu.style.transform = 'translateX(-16rem)';
-    // body.style.background = "black";
-    // body.style.opacity = "0.1";
+const navbar = document.querySelector("#navbar");
+const menubar = document.querySelector("#menubar");
+function openMenu() {
+  menu.style.transform = "translateX(-16rem)";
+  // body.style.background = "black";
+  // body.style.opacity = "0.1";
 }
-function closeMenu(){
-    menu.style.transform = 'translateX(16rem)';
-    // body.style.background = "white";
-    // body.style.opacity = "1";
+function closeMenu() {
+  menu.style.transform = "translateX(16rem)";
+  // body.style.background = "white";
+  // body.style.opacity = "1";
 }
-
-window.addEventListener('scroll',()=>{
-    if(scrollY>50){
-        navbar.classList.add('bg-white','bg-opacity-50','backdrop-blur-lg','shadow-sm');
-        menubar.classList.remove('bg-opacity-50', 'shadow-sm');
-    }else{
-        navbar.classList.remove('bg-white','bg-opacity-50','backdrop-blur-lg','shadow-sm');
-        menubar.classList.add('bg-opacity-50', 'shadow-sm');
-
-    }
-})
+window.addEventListener("scroll", () => {
+  if (scrollY < 50) {
+    navbar.classList.remove(
+      "bg-white",
+      "bg-opacity-50",
+      "backdrop-blur-lg",
+      "shadow-sm",
+      "dark:bg-darkTheme",
+      "dark:shadow-white/20",
+    );
+    menubar.classList.add(
+      "bg-opacity-50",
+      "shadow-sm",
+      "dark:border-white/50",
+      "border",
+    );
+  } else {
+    navbar.classList.add(
+      "bg-white",
+      "bg-opacity-50",
+      "backdrop-blur-lg",
+      "shadow-sm",
+      "dark:bg-darkTheme",
+      "dark:shadow-white/20",
+    );
+    menubar.classList.remove(
+      "bg-opacity-50",
+      "shadow-sm",
+      "dark:border-white/50",
+      "border",
+    );
+  }
+});
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
+function toggleTheme() {
+  document.documentElement.classList.toggle("dark");
+  if (document.documentElement.classList.contains("dark")) {
+    localStorage.theme = "dark";
+  } else {
+    localStorage.theme = "light";
+  }
+}
