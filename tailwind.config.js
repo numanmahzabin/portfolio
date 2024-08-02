@@ -9,7 +9,12 @@ module.exports = {
       },
       colors:{
         "blue" : "#110020"
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
       }
+
+      
     },
   },
   plugins: [],
