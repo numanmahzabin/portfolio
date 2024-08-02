@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* 
 body{
-    font-family: "Ovo, serif";
-} */
+    font-family: "outfit";
+}
+
+h1,h2,h3,h4,h5,h6,p, nav a{
+    font-family: "ovo";
+}

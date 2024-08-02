@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Tailwind Project</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="w-screen overflow-x-hidden">
     <!-- bg image  -->
@@ -84,9 +90,13 @@
 
     <section
       id="home"
-      class="pt-30 flex min-h-screen flex-col items-center justify-center gap-3 px-6 py-10 text-center sm:gap-5"
+      class="pt-30 mb-5 flex flex-col items-center justify-center gap-3 px-[12%] py-10 text-center sm:gap-5"
     >
-      <img src="img/profile-img.png" alt="" class="w-24 rounded-full sm:w-32" />
+      <img
+        src="img/profile-img.png"
+        alt=""
+        class="mt-24 w-24 rounded-full sm:w-32"
+      />
       <h3 class="text-lg sm:text-xl md:text-2xl">Hi! I'm Eliana Jade</h3>
       <h1 class="max-w-3xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
         frontend web developer based in London.
@@ -117,7 +127,7 @@
     </section>
 
     <!-- about section -->
-    <section id="about" class="w-full scroll-mt-20 px-[12%] py-10">
+    <section id="about" class="mb-5 w-full scroll-mt-20 px-[12%] py-10">
       <p class="text-center text-lg">Introduction</p>
       <h3 class="mt-2 text-center text-5xl">About me</h3>
       <!-- main about -->
@@ -154,7 +164,7 @@
             contributing to their success and growth.
           </p>
           <!-- cards -->
-          <ul class="flex max-w-2xl flex-col gap-6 sm:flex-row">
+          <ul class="card flex max-w-2xl flex-col gap-6 sm:flex-row">
             <!-- <ul class=" grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">  -->
             <!-- card 01 -->
             <li
@@ -218,15 +228,17 @@
 
     <!-- service section -->
 
-    <section id="service" class="my-10 w-full scroll-mt-20 px-[12%] py-10">
-      <h3 class="text-center text-lg">What i offer</h3>
+    <section id="service" class="mb-5 w-full scroll-mt-20 px-[12%] py-10">
+      <h3 class="text-center text-lg">What I Offer</h3>
       <h2 class="my-5 text-center text-5xl">My services</h2>
       <p class="mx-auto my-3 mb-5 max-w-xl text-center text-base/8">
         I am a frontend developer from California, USA with 10 years of
         experience in multiple companies like Microsoft, Tesla and Apple.
       </p>
       <!-- cards -->
-      <ul class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <ul
+        class="card mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+      >
         <li
           class="flex cursor-pointer flex-col gap-5 rounded-lg border-[0.5px] border-gray-400 px-8 py-12 text-gray-700 duration-500 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[4px_4px_black]"
         >
@@ -283,7 +295,7 @@
     </section>
 
     <!-- my work -->
-    <section id="work" class="w-full scroll-mt-10 px-[12%] py-10">
+    <section id="work" class="mb-5 w-full scroll-mt-12 px-[12%] py-10">
       <h3 class="text-center text-lg">My Portfolio</h3>
       <h2 class="my-5 text-center text-5xl">My latest work</h2>
       <p class="mx-auto mb-10 max-w-xl text-center text-base/8">
@@ -293,7 +305,7 @@
       <!-- work showcase -->
 
       <ul
-        class="mb-20 mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
+        class="card mb-20 mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
       >
         <li
           class="group relative aspect-square cursor-pointer rounded-lg bg-[url('../img/work-1.png')] bg-cover bg-center bg-no-repeat"
@@ -374,7 +386,7 @@
     </section>
 
     <!-- contact -->
-    <section id="contact" class="w-full scroll-mt-10 px-[12%] py-10">
+    <section id="contact" class="mb-5 w-full scroll-mt-10 px-[12%] py-10">
       <h3 class="text-center text-lg">Connect with me</h3>
       <h2 class="my-5 text-center text-5xl">Get in touch</h2>
       <p class="mx-auto mb-10 max-w-xl text-center text-base/8">
