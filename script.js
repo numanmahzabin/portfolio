@@ -65,4 +65,6 @@ function toggleTheme() {
 
 
 // call back function for handling token of recaptcha
-
+function onSubmit(token) {
+  document.getElementById("form-submit").submit();
+}
