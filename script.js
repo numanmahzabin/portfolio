@@ -67,7 +67,7 @@ function toggleTheme() {
 function validateRecaptcha() {
   var recaptchaResponse = document.getElementById("g-recaptcha-response").value;
   if (recaptchaResponse.length === 0) {
-    document.getElementById("recaptcha-error").classList.add("block");
+    document.getElementById("recaptcha-error").style.display = "block";
     return false;
   }
   return true;
@@ -75,8 +75,7 @@ function validateRecaptcha() {
 
 function recaptchaCallback(response) {
   document.getElementById("g-recaptcha-response").value = response;
-  document.getElementById("recaptcha-error").classList.remove("hidden");
-  // document.getElementById("recaptcha-error").style.display = "hidden";
+  document.getElementById("recaptcha-error").style.display = "none";
 }
 
 document
