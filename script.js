@@ -64,19 +64,10 @@ function toggleTheme() {
 }
 
 // call back function for handling token of recaptcha
-function onSubmit(token) {
-  var form = document.getElementById("form-submit");
-  if (form.checkValidity()) {
-    form.submit();
-  } else {
-    alert("Please fill out all required fields.");
-  }
-}
-
 function validateRecaptcha() {
   var recaptchaResponse = document.getElementById("g-recaptcha-response").value;
   if (recaptchaResponse.length === 0) {
-    alert("Please complete the reCAPTCHA challenge.");
+    document.getElementById("recaptcha-error").style.display = "block";
     return false;
   }
   return true;
@@ -84,4 +75,13 @@ function validateRecaptcha() {
 
 function recaptchaCallback(response) {
   document.getElementById("g-recaptcha-response").value = response;
+  document.getElementById("recaptcha-error").style.display = "none";
 }
+
+document
+  .getElementById("form-submit")
+  .addEventListener("submit", function (event) {
+    if (!validateRecaptcha()) {
+      event.preventDefault();
+    }
+  });
