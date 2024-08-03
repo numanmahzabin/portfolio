@@ -63,8 +63,12 @@ function toggleTheme() {
   }
 }
 
-
 // call back function for handling token of recaptcha
 function onSubmit(token) {
-  document.getElementById("form-submit").submit();
+  var form = document.getElementById("form-submit");
+  if (form.checkValidity()) {
+    form.submit();
+  } else {
+    alert("Please fill out all required fields.");
+  }
 }
