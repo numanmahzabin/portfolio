@@ -72,3 +72,16 @@ function onSubmit(token) {
     alert("Please fill out all required fields.");
   }
 }
+
+function validateRecaptcha() {
+  var recaptchaResponse = document.getElementById("g-recaptcha-response").value;
+  if (recaptchaResponse.length === 0) {
+    alert("Please complete the reCAPTCHA challenge.");
+    return false;
+  }
+  return true;
+}
+
+function recaptchaCallback(response) {
+  document.getElementById("g-recaptcha-response").value = response;
+}
