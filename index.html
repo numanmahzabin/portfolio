@@ -590,12 +590,15 @@
             rows="8"
             name="message"
           ></textarea>
-          <div class="flex items-center justify-between">
-            <div
-              class="g-recaptcha"
-              data-sitekey="6Lcceh4qAAAAAAcMycTw_tT2KsaafCunqllUhOM1"
-              data-callback="recaptchaCallback"
-            ></div>
+          <div class="flex flex-col items-center justify-between md:flex-row">
+            <div class="px-10 md:px-0">
+
+              <div
+                class="g-recaptcha"
+                data-sitekey="6Lcceh4qAAAAAAcMycTw_tT2KsaafCunqllUhOM1"
+                data-callback="recaptchaCallback"
+              ></div>
+            </div>
 
             <!-- Hidden input field for reCAPTCHA response token -->
             <input
@@ -617,7 +620,7 @@
             </button>
           </div>
           <p
-            class="error-message mt-5 text-center text-lg text-red-600"
+            class="error-message -mt-5 text-center text-sm text-red-600"
             id="recaptcha-error"
           >
             Please complete the reCAPTCHA challenge.
