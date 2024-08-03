@@ -590,16 +590,25 @@
             rows="8"
             name="message"
           ></textarea>
-          <button
-            class="g-recaptcha col-span-2 mx-auto mt-5 flex items-center gap-3 self-center rounded-full border bg-black/80 px-6 py-2.5 text-white duration-500 hover:bg-black/100 sm:px-12 sm:py-4 sm:max-md:w-full dark:border-lightHover dark:bg-darkTheme dark:hover:bg-darkHover"
-            data-sitekey="6Lc7dB4qAAAAALp2O2AZug4-Cxj_elA5sbqpJ8wG"
-            data-callback="onSubmit"
-            data-action="submit"
-            type="submit"
-          >
-            Submit now
-            <img src="img/right-arrow-bold-dark.png" alt="" class="mt-1 w-4" />
-          </button>
+          <div class="flex items-center justify-between">
+            <div
+              class="g-recaptcha"
+              data-theme="dark"
+              data-sitekey="6Lcceh4qAAAAAAcMycTw_tT2KsaafCunqllUhOM1"
+              data-size="compact"
+            ></div>
+            <button
+              class="mt-5 flex items-center gap-3 self-center rounded-full border bg-black/80 px-6 py-2.5 text-white duration-500 hover:bg-black/100 sm:px-12 sm:py-4 sm:max-md:w-full dark:border-lightHover dark:bg-darkTheme dark:hover:bg-darkHover"
+              type="submit"
+            >
+              Submit now
+              <img
+                src="img/right-arrow-bold-dark.png"
+                alt=""
+                class="mt-1 w-4"
+              />
+            </button>
+          </div>
         </form>
       </section>
 
@@ -641,7 +650,7 @@
     <!-- script file -->
     <script src="script.js"></script>
     <!-- adding recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </body>
 </html>
 
